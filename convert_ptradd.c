@@ -10,7 +10,7 @@ int printf_pointer(va_list args)
 {
 	void *ptr = va_arg(args, void*);
 
-	uintptr_t address = (uintptr_t)ptr;
+	unsigned long address = (unsigned long)ptr;
 
 	char buffer[16];
 
